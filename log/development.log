@@ -38,3 +38,34 @@ Started GET "/" for ::1 at 2015-11-18 13:37:10 -0600
 Processing by Rails::WelcomeController#index as HTML
   Rendered /Users/admin/.rvm/gems/ruby-2.1.2/gems/railties-4.2.3/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
 Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: Defining a route where `to` is a controller without an action is deprecated. Please change `to: 'index.thml'` to `controller: 'index.thml'`. (called from block in <top (required)> at /Users/ValerieMcCarthy/Flatiron-dev/rails-restful-index-action-lab-web-1116/config/routes.rb:3)
+
+
+Started GET "/students" for ::1 at 2016-12-22 11:59:50 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/ValerieMcCarthy/Flatiron-dev/rails-restful-index-action-lab-web-1116/app/views/students/index.html.erb:3: syntax error, unexpected keyword_end
+'.freeze;@output_buffer.append=( end );@output_buffer.to_s
+                                    ^
+/Users/ValerieMcCarthy/Flatiron-dev/rails-restful-index-action-lab-web-1116/app/views/students/index.html.erb:4: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/ValerieMcCarthy/Flatiron-dev/rails-restful-index-action-lab-web-1116/app/views/students/index.html.erb:6: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/students/index.html.erb:3: syntax error, unexpected keyword_end
+  app/views/students/index.html.erb:4: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/students/index.html.erb:6: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/ValerieMcCarthy/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Users/ValerieMcCarthy/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/ValerieMcCarthy/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/ValerieMcCarthy/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.0ms)
+  Rendered /Users/ValerieMcCarthy/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/ValerieMcCarthy/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/ValerieMcCarthy/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/ValerieMcCarthy/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/ValerieMcCarthy/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (46.8ms)
+  Rendered /Users/ValerieMcCarthy/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/ValerieMcCarthy/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/ValerieMcCarthy/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (106.1ms)
